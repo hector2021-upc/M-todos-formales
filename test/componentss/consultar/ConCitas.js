@@ -23,7 +23,7 @@ const ConCitas =  ({navigation})  => {
   function resultado (nombre,valor,editable,fortmato){
       return(
         <TextInput
-        placeholder= {nombre}               // En la barra aparecera el nombre que queramos, y de esta amnera nos ahorramos colocar un text en pantalla
+        placeholder= {nombre}               // En la barra aparecera el nombre que se solicita, y de esta amnera nos ahorramos colocar un text en pantalla
         style= {styles.inputText}                                        // El estilo que deseamos en la aplicacion (visual)
         value = {valor}  
         editable={false}                                                   // El Valor que toma el Imput(en pantalla)
