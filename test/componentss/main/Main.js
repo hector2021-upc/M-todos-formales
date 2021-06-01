@@ -60,21 +60,5 @@ const Main=  ({navigation},user)  => {
     </ImageBackground>
     ) ;
 }
-jkvbrjñfvek
-jnfcjdlvlkejf
-jflsk dcfnlb
-dnklnfv kjf{gp
-jkndb ljdfngñklfg
-lknñlknflñckjgd
-jjskndnflksdm
-bflkns dlkndlf-b
-             kñjvsdklñ dvd
-             ksdlnkl sndlmd
-             knldjnv lñkfmnv{ñdf
-             jnkls ndvlkñdfjbn
-             jlñjdvkjkldmv{
-                 jnñlvnlkdfnvmd
-                 jbsdkñnsv{pdf
-                 nlkvdmfjpvoskp{vg
                  
 export default Main
