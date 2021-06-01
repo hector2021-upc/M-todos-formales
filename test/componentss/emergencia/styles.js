@@ -64,7 +64,14 @@ const styles = StyleSheet.create({
       height: 150,
       justifyContent: "flex-start"
     }
-   
+   color jndfknrñbf
+    kjnvdlnbdnkbl
+    njkdnfvlkdnlfvk
+    klnldklsk,ldfb
+    {
+    mnvldnbd{
+    kdnfvlndlndfndf}knvljdnv
+                                 mdvdnfjkvnd
 
 });
 export default styles
