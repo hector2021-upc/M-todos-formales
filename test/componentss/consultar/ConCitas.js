@@ -5,10 +5,10 @@ import styles from './styles';
 
 const ConCitas =  ({navigation})  => {
   console.log(global.id)
-  const [data, setData] = useState([]);  // tiene la informacion de la base de datos solicitada
-  const [user, setUser] = useState(global.usuarios);  // el usuario que debemos consultar en la base de datos 
+  const [data, setData] = useState([]);  // Tiene la informacion de la base de datos solicitada
+  const [user, setUser] = useState(global.usuarios);  // El usuario que debemos consultar en la base de datos 
   const [isLoading, setLoading] = useState(true);
-
+ 
   
   const url='http://192.168.68.103:8080/Servidor/webresources/entity.cita/'
   useEffect(() => {
