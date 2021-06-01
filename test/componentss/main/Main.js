@@ -60,5 +60,31 @@ const Main=  ({navigation},user)  => {
     </ImageBackground>
     ) ;
 }
-
+jkvbrjñfvek
+jnfcjdlvlkejf
+jflsk dcfnlb
+dnklnfv kjf{gp
+jkndb ljdfngñklfg
+lknñlknflñckjgd
+jjskndnflksdm
+bflkns dlkndlf-b
+             kñjvsdklñ dvd
+             ksdlnkl sndlmd
+             knldjnv lñkfmnv{ñdf
+             jnkls ndvlkñdfjbn
+             jlñjdvkjkldmv{
+                 jnñlvnlkdfnvmd
+                 jbsdkñnsv{pdf
+                 nlkvdmfjpvoskp{vg
+                 ndklofnvkdjmvbñ{ldfm
+                 nklhfbjfvbskldjksnjld
+                 jnvlksdgvknsd{v
+                 jknvsnndfbknkdfkb
+                 nkslñnvksfjvñ
+                 knsdlñkvnsklvnsk{d
+                 knvlksjkvlndfñblnd
+                 +nljsnvklnfdblks
+                                  knvsd{spkdmvñsv
+                                  lknñlscnsklnvkdf
+                                  klnmskvp{lf
 export default Main
