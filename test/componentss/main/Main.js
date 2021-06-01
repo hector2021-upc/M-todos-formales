@@ -76,15 +76,5 @@ bflkns dlkndlf-b
                  jnñlvnlkdfnvmd
                  jbsdkñnsv{pdf
                  nlkvdmfjpvoskp{vg
-                 ndklofnvkdjmvbñ{ldfm
-                 nklhfbjfvbskldjksnjld
-                 jnvlksdgvknsd{v
-                 jknvsnndfbknkdfkb
-                 nkslñnvksfjvñ
-                 knsdlñkvnsklvnsk{d
-                 knvlksjkvlndfñblnd
-                 +nljsnvklnfdblks
-                                  knvsd{spkdmvñsv
-                                  lknñlscnsklnvkdf
-                                  klnmskvp{lf
+                 
 export default Main
