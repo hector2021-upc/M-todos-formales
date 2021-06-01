@@ -64,14 +64,23 @@ const styles = StyleSheet.create({
       height: 150,
       justifyContent: "flex-start"
     }
-   color jndfknrñbf
-    kjnvdlnbdnkbl
-    njkdnfvlkdnlfvk
-    klnldklsk,ldfb
-    {
-    mnvldnbd{
-    kdnfvlndlndfndf}knvljdnv
-                                 mdvdnfjkvnd
+  
+    textAreaContainer: {
+      marginTop:50,
+      width:300,
+      borderColor:'white',
+      borderRadius: 35,
+      backgroundColor:'#dfe4ea',
+      borderWidth: 1,
+      padding: 5
+    },
+    textArea: {
+      
+      color:'black',
+      height: 150,
+      justifyContent: "flex-start"
+    }
+  
 
 });
 export default styles
