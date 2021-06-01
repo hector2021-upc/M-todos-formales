@@ -5,8 +5,8 @@ import styles from './styles';
 
 const ConCitas =  ({navigation})  => {
   console.log(global.id)
-  const [data, setData] = useState([]);  // Tiene la informacion de la base de datos solicitada
-  const [user, setUser] = useState(global.usuarios);  // El usuario que debemos consultar en la base de datos 
+  const [data, setData] = useState([]);  // TIENE LA INFORMACIÓN DE LA BASE DE DATOS SOLICITADA
+  const [user, setUser] = useState(global.usuarios);  // EL USUARIO QUE DEBEMOS CONSULTAR EN LA BASE DE DATOS 
   const [isLoading, setLoading] = useState(true);
  
   
@@ -20,7 +20,7 @@ const ConCitas =  ({navigation})  => {
       .finally(() => setLoading(false));
   },[]);  
 
-  function resultado (nombre,valor,editable,fortmato){
+  function resultado (nombre,valor,editable,fortmato){ 
       return(
         <TextInput
         placeholder= {nombre}               // En la barra aparecera el nombre que se solicita, y de esta amnera nos ahorramos colocar un text en pantalla
