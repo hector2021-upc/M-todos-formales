@@ -15,7 +15,7 @@ const Consultar =  ({navigation})  => {
       setData(json)})
       .catch((error) => console.error(error))
       .finally(() => setLoading(false));
-  },[]);
+  },[]); 
 
   const Item = ({ item, onPress}) => (
     <TouchableOpacity onPress={onPress} style={styles.button}>
@@ -53,7 +53,7 @@ const Consultar =  ({navigation})  => {
       />
     </SafeAreaView>
         
-   </ImageBackground>
+   </ImageBackground> 
     
   );
 };
