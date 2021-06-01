@@ -18,7 +18,7 @@ const ConCitas =  ({navigation})  => {
       setData(json)})
       .catch((error) => console.error(error))
       .finally(() => setLoading(false));
-  },[]);
+  },[]);  
 
   function resultado (nombre,valor,editable,fortmato){
       return(
