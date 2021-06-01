@@ -99,6 +99,16 @@ const Login = ({navigation}) => {
                       onChange={(e) => setPass(e.nativeEvent.text)}                   //para que al momento que el usuario agrege la infomacion se borre el titulo 
                     />  
                  </View>
+<View style= {styles.containesPasswor}>
+                  <Icon name="lock" style={styles.iconoEmailPas} />
+                      <TextInput secureTextEntry={true}
+                      placeholder= "Password"
+                      style= {styles.inputText}
+                      value = {pass}
+                      onChange={(e) => setPass(e.nativeEvent.text)}                   //para que al momento que el usuario agrege la infomacion se borre el titulo 
+                    />  
+                 </View>
+ 
 
          
              {/* Con esto hacemos que los botones que creamos se puedan pulsar */}
