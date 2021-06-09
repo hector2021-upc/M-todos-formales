@@ -4,11 +4,17 @@ import { State } from 'react-native-gesture-handler';
 import styles from './styles';
 
 const ConCitas =  ({navigation})  => {
+<<<<<<< HEAD
  // console.log(global.id)
   const [data, setData] = useState([]);  // tiene la informacion de la base de datos solicitada
   const [user, setUser] = useState(global.usuarios);  // el usuario que debemos consultar en la base de datos 
+=======
+  console.log(global.id)
+  const [data, setData] = useState([]);  // TIENE LA INFORMACIÓN DE LA BASE DE DATOS SOLICITADA
+  const [user, setUser] = useState(global.usuarios);  // EL USUARIO QUE DEBEMOS CONSULTAR EN LA BASE DE DATOS 
+>>>>>>> 94809688bd4107585dfe8eed4f331fce140bf858
   const [isLoading, setLoading] = useState(true);
-
+ 
   
   const url='http://192.168.68.103:8080/Servidor/webresources/entity.cita/'
   useEffect(() => {
@@ -18,12 +24,12 @@ const ConCitas =  ({navigation})  => {
       setData(json)})
       .catch((error) => console.error(error))
       .finally(() => setLoading(false));
-  },[]);
+  },[]);  
 
-  function resultado (nombre,valor,editable,fortmato){
+  function resultado (nombre,valor,editable,fortmato){ 
       return(
         <TextInput
-        placeholder= {nombre}               // En la barra aparecera el nombre que queramos, y de esta amnera nos ahorramos colocar un text en pantalla
+        placeholder= {nombre}               // En la barra aparecera el nombre que se solicita, y de esta amnera nos ahorramos colocar un text en pantalla
         style= {styles.inputText}                                        // El estilo que deseamos en la aplicacion (visual)
         value = {valor}  
         editable={false}                                                   // El Valor que toma el Imput(en pantalla)

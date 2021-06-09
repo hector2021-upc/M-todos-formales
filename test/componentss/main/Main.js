@@ -68,5 +68,5 @@ const consultaretapa = () => {
     </ImageBackground>
     ) ;
 }
-
+                 
 export default Main

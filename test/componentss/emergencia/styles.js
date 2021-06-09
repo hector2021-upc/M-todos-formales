@@ -64,7 +64,7 @@ const styles = StyleSheet.create({
       height: 150,
       justifyContent: "flex-start"
     }
-   
+  
 
 });
 export default styles

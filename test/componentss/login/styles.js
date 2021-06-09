@@ -50,6 +50,14 @@ const styles = StyleSheet.create({
       borderRadius: 35,
       marginHorizontal:20,
       marginTop:20
+    }, containesPasswor2: {
+      flexDirection: 'row',
+      backgroundColor:'#a4b0be',
+     justifyContent:'center',
+      alignItems:'center',
+      borderRadius: 35,
+      marginHorizontal:20,
+      marginTop:20asdasdasdasdasdasdasdasd
     }
    
 });
