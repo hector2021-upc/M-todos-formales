@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
     
     }, 
     inputInformacion: {    
-      width:270,
+      width:300,
       fontSize:15,                                //barras para recibir datos solicitados
       marginTop:-10,
       marginVertical:-10,
@@ -66,6 +66,71 @@ const styles = StyleSheet.create({
       alignItems:'center',
       fontSize:15,
     
+    },image:{
+      width:300,
+      height:120,
+      marginVertical:20
+      
+    },containerslect:{
+      justifyContent:'center',
+      alignItems: 'center',
+      borderRadius: 35,
+     backgroundColor:'#dfe4ea',
+     borderWidth: 1,
+     borderColor:'white',
+     marginTop:20
+    
+    },picker:{
+      marginLeft:10,
+      alignItems:'center',
+      width:250,
+      textAlign:'center',
+      
+    },button2: {    
+      flexDirection: 'row',                                          // botones 
+      height:120,
+      width:350,
+      marginHorizontal:30,
+      marginVertical:-20,
+      borderRadius: 35,
+      marginTop:40,
+     backgroundColor:'rgba(255,255,255,.15)',
+     borderWidth: 1,
+      borderColor:'black',
+      marginVertical:10
+
+    },Texto:{
+      width:200,
+      marginTop:50,
+      fontSize:15,
+    },
+    TituloTex:{
+      marginTop:20,
+      fontSize:20,
+      fontWeight:'bold'
+    }, image1:{
+      width:70,
+      height:80,
+      marginTop:20,
+      marginHorizontal:20,
+    },textStyle: {
+      alignSelf: 'center',
+      color: '#336633',
+      fontSize: 16,
+      fontWeight: '600',
+      paddingTop: 10,
+      paddingBottom: 10
+    },
+    buttonStyle: {
+      backgroundColor: '#fff',
+      borderWidth: 1,
+      borderColor: '#336633',
+      paddingTop: 4,
+      paddingBottom: 4,
+      paddingRight: 25,
+      paddingLeft: 25,
+      marginTop: 10,
+      width: 300
     }
 
 });

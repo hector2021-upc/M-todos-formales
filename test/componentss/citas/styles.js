@@ -41,7 +41,12 @@ const styles = StyleSheet.create({
       marginTop:20,
       fontSize:20,
       fontWeight:'bold'
-    },
+    },image:{
+      width:300,
+      height:120,
+      marginTop:40,
+      
+    }
     
 });
 export default styles

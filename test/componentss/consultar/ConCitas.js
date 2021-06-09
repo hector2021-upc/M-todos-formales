@@ -4,7 +4,7 @@ import { State } from 'react-native-gesture-handler';
 import styles from './styles';
 
 const ConCitas =  ({navigation})  => {
-  console.log(global.id)
+ // console.log(global.id)
   const [data, setData] = useState([]);  // tiene la informacion de la base de datos solicitada
   const [user, setUser] = useState(global.usuarios);  // el usuario que debemos consultar en la base de datos 
   const [isLoading, setLoading] = useState(true);
@@ -14,7 +14,7 @@ const ConCitas =  ({navigation})  => {
   useEffect(() => {
     fetch(url+global.id)
       .then((response) => response.json())
-      .then((json) => {console.log(json)
+      .then((json) => {//console.log(json)
       setData(json)})
       .catch((error) => console.error(error))
       .finally(() => setLoading(false));
@@ -31,7 +31,48 @@ const ConCitas =  ({navigation})  => {
       /> 
       )
   }
+  const modificar= async () =>{
+      if (data.estado != "Vacunado") {
+        navigation.navigate('Modicacion')  
+      }else{
+        alert("no se puede modificar")
+    }
+    
+  }
+  const Eliminar= async () =>{
+      if (data.estado != "Vacunado") {
+        fetch(url+global.id, {
+            method: 'DELETE',
+            headers: {
+              Accept: 'application/json',
+              'Content-Type': 'application/json'
+            }
+          })
+        alert("Se ha eliminado correctamente")
+        navigation.navigate("CECVACUNAAP")
+      }else{
+          alert("no se puede eliminar")
+      }
+   
+  }
+  const Eliminar2= async () =>{
+    if (data.estado != "Vacunado") {
+      fetch(url+global.id, {
+          method: 'DELETE',
+          headers: {
+            Accept: 'application/json',
+            'Content-Type': 'application/json'
+          }
+        })
+    }else{
+        alert("no se puede reagendar la cita")
+    }
  
+}
+  const Reagendar= async () =>{
+    Eliminar2()
+    navigation.navigate("Citas")
+  }
   return (
     <ImageBackground source={require ('./Imagenes/fondo.png')} style={styles.container}>
         <ScrollView >
@@ -98,12 +139,16 @@ const ConCitas =  ({navigation})  => {
                     style={styles.image2}
                     source={require('./Imagenes/1.png')}
                     />
-                    < TouchableOpacity style= {styles.button}  >
-             <Text >Cambiar Ubicacion</Text>
-       </ TouchableOpacity> 
 
-       < TouchableOpacity style= {[styles.button,{marginTop:10, marginVertical:30}]}  >
+                    < TouchableOpacity style= {styles.button} onPress={modificar} >
+                    <Text >Cambiar Ubicacion</Text>
+              </ TouchableOpacity> 
+
+       < TouchableOpacity style= {[styles.button,{marginTop:10}]} onPress={Eliminar} >
              <Text >Eliminar</Text>
+       </ TouchableOpacity> 
+       < TouchableOpacity style= {[styles.button,{marginTop:10, marginVertical:30}]} onPress={Reagendar} >
+             <Text >Reagendar cita</Text>
        </ TouchableOpacity> 
     </View>
     </ScrollView>

@@ -13,6 +13,9 @@ const Main=  ({navigation},user)  => {
   const consultarpagina = () => {
     navigation.navigate('Consultar')   
 }
+const consultaretapa = () => {
+   navigation.navigate('Etapa')   
+}
     return (
         <ImageBackground source={require ('./Imagenes/fondo.png')} style={styles.container}>
            
@@ -50,12 +53,17 @@ const Main=  ({navigation},user)  => {
                <Text  style={[styles.Texto,{ marginLeft:-105}]}>Solicitar ayuda con caracter urgente</Text>
             </ TouchableOpacity>  
 
+            < TouchableOpacity style= {styles.button } onPress ={consultaretapa} >
+               <Image 
+               style={styles.image1}
+               source={require('./Imagenes/SoliInfo.png')}
+               />
+                  <Text style={styles.Titulo}>Consulta de Etapa</Text>
+               <Text  style={[styles.Texto,{ marginLeft:-160}]}>Averiguar la etapa a la que pertenece</Text>
+            </ TouchableOpacity> 
 
-            <View style={styles.lineas}> 
-                <Image 
-               style={styles.image2}
-               source={require('./Imagenes/1.png')}
-               /></View>
+          
+           
                
     </ImageBackground>
     ) ;

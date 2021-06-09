@@ -2,8 +2,7 @@ import React, {useState} from 'react';
 import {View, Text, TextInput, ImageBackground, Image, TouchableOpacity} from 'react-native';
 
 import styles from './styles'
-import Icon from 'react-native-ionicons'
-import Citas from '../citas/Citas'
+
 
 const Login = ({navigation}) => { 
  
@@ -79,7 +78,7 @@ const Login = ({navigation}) => {
          
                  
              <View style= {styles.containesPasswor}>
-             <Icon name="mail" style={styles.iconoEmailPas} />
+             
                 <TextInput
                   placeholder= "Email"                                        //En la barra aparecera el nombre que queramos, y de esta amnera nos ahorramos colocar un text en pantalla
                   style= {styles.inputText}
@@ -91,7 +90,7 @@ const Login = ({navigation}) => {
             </View>
 
                   <View style= {styles.containesPasswor}>
-                  <Icon name="lock" style={styles.iconoEmailPas} />
+                  
                       <TextInput secureTextEntry={true}
                       placeholder= "Password"
                       style= {styles.inputText}

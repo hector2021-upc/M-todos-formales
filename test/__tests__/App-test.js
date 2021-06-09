@@ -1,14 +1,14 @@
-/**
- * @format
- */
+import React from "react";
+import {render} from "@testing-library/react-native"
+import App from "../App"
+import Login from "../componentss/login/Login"
+let component;
+describe("",()=>{
+  beforeEach(()=>{
+    component= render(<App/>)
+  })
+  it('correcto', () => {
+    console.log(component)
+  });
+})
 
-import 'react-native';
-import React from 'react';
-import App from '../App';
-
-// Note: test renderer must be required after react-native.
-import renderer from 'react-test-renderer';
-
-it('renders correctly', () => {
-  renderer.create(<App />);
-});

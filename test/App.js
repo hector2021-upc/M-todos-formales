@@ -11,6 +11,9 @@ import Consultar from './componentss/consultar/Consultar';
 import SitiosAutorizados from './componentss/citas/FormaVacunacion/SitiosAutorizados'
 import Casa from './componentss/citas/FormaVacunacion/Casa';
 import ConCitas from './componentss/consultar/ConCitas';
+import Modificar from './componentss/consultar/Modificar';
+import ConsultarEtapa from './componentss/consultar/ConsultarEtapa';
+
 const Stack = createStackNavigator()
 export default function App() {
 
@@ -84,7 +87,20 @@ export default function App() {
                         headerTitleAlign: 'center',
                         
                         }}  name = "ConCitas" component= {ConCitas}/> 
-
+        <Stack.Screen options={{
+                     headerStyle: {
+                            backgroundColor: '#EDD9D9'
+                        },
+                        headerTitleAlign: 'center',
+                        
+                        }}  name = "Modicacion" component= {Modificar}/> 
+                 <Stack.Screen options={{
+                     headerStyle: {
+                            backgroundColor: '#EDD9D9'
+                        },
+                        headerTitleAlign: 'center',
+                        
+                        }}  name = "Etapa" component= {ConsultarEtapa}/> 
 
                 </Stack.Navigator>
                 

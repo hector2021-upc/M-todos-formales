@@ -17,30 +17,7 @@ const Citas =  ({navigation})  => {
             }})
              .then((response) =>response.json())
              .then((responseJson) => {
-              let ahora =new Date();
-              let fechaNa= new Date(responseJson.fechanacimiento)
-              let anos= ahora.getFullYear()-fechaNa.getFullYear();
-              if (ahora.getMonth() < fechaNa.getMonth()) {
-                --anos;
-              }
-              global.anos=anos;
-              if (global.anon > 80) {
-                global.Etapa="1 Etapa"
-           }else{
-                if (global.anon > 60 && global.anon < 79) {
-                  global.Etapa="2 Etapa"  
-                }else{
-                     if (global.anon > 50 && global.anon < 59) {
-                      global.Etapa="3 Etapa"  
-                     }else{
-                          if (global.anon > 40 && global.anon < 49) {
-                            global.Etapa="4 Etapa"
-                          }else{
-                            global.Etapa="5 Etapa"
-                          }
-                     }
-                }
-           }
+              global.Etapa=responseJson.etapa
                  //console.log(global.anos) 
              })
              .catch((e)=>{
@@ -74,19 +51,31 @@ const Citas =  ({navigation})  => {
                     source={require('./Imagenes/1.png')}
                     />
                < TouchableOpacity style= {styles.button }  onPress ={casa} >
-                    <Text style={styles.TituloTex}>Casa</Text>
+               <Image 
+               style={styles.image1}
+               source={require('./Imagenes/casa.png')}
+               />
+                    <Text style={[styles.TituloTex,{marginLeft:-20}]}>Casa</Text>
                     <Text  style={[styles.Texto,{ marginLeft:-30}]}>Puedes agendar tu Cita para la vacuna conta el COVID-19</Text>
               </ TouchableOpacity>  
              
                < TouchableOpacity style= {styles.button } onPress ={SitiosAutorizados}>
-                    <Text style={styles.TituloTex}>Cita en sitios autorizados</Text>
-                    <Text  style={[styles.Texto,{ marginLeft:-220}]}>Puedes agendar tu Cita para la vacuna conta el COVID-19</Text>
+               <Image 
+               style={styles.image1}
+               source={require('./Imagenes/hospitales.png')}
+               />
+                    <Text style={[styles.TituloTex,{marginLeft:-20}]}> Sitios autorizados</Text>
+                    <Text  style={[styles.Texto,{ marginLeft:-150}]}>Puedes agendar tu Cita para la vacuna conta el COVID-19</Text>
               </ TouchableOpacity>  
 
               <Image 
                     style={[styles.image2,{marginTop:60}]}
                     source={require('./Imagenes/1.png')}
                     />
+                     <Image 
+               style={styles.image}
+               source={require('./Imagenes/Logoinferior.png')}
+               />
     </ImageBackground>
     ) ;
   

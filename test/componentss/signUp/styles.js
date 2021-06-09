@@ -48,6 +48,21 @@ const styles = StyleSheet.create({
     borderRadius: 35,
     marginHorizontal:20,
     marginTop:20
+  },
+  containerslect:{
+    justifyContent:'center',
+    alignItems: 'center',
+    borderRadius: 35,
+   backgroundColor:'#dfe4ea',
+   borderWidth: 1,
+   borderColor:'white',
+  
+  },
+  picker:{
+    marginLeft:10,
+    alignItems:'center',
+    width:250,
+    textAlign:'center'
   }
 });
 
